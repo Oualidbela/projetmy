@@ -1,0 +1,411 @@
+/* les polices en ligne*/ 
+@font-face {
+    font-family: TheNeue;
+    src: url("ecrite/TheNeue-Black.ttf");
+}
+ 
+@font-face {
+    font-family: orbit;
+    src: url("ecrite/Orbitron\ Bold.ttf");
+}
+ 
+@font-face {
+    font-family: junction;
+    src: url("ecrite/junction-bold.ttf");
+    font-weight:normal;
+}
+@font-face {
+    font-family:Please write me a song ;
+    src: url('ecrite/Please write\ me\ a\ song.ttf');
+}
+@font-face {
+    font-family: 'Addiction';
+    src: url('ecrite/Addiction.ttf');
+     
+}
+@font-face {
+    font-family: 'Alphacrisp';
+    src: url('ecrite/Alphacrisp.ttf');
+}
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/*** le container d'elements ***/
+.cont{ 
+    height: 100%;
+   width: 987px;
+    margin: auto;
+    overflow: hidden
+}
+
+/*------------------------------------------ -page principale- -------------------------------*/
+
+
+/*** La partie header de page prancipal ***/
+
+.info{
+    width: 393px;
+}
+.menu{
+    position:absolute;
+    width: 75%;
+    display: inline-block;
+}
+
+/* la partide menu de la page (les link)*/
+.menu header{
+    background-color: #252f31;
+    width: 100%;
+}
+.menu header .cont{
+    height: 55px;
+}
+.menu header span{
+    width: 36px;
+    position: absolute;
+    right: 18px;
+    top: 0px;
+} 
+.menu header span a{ 
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    color: #a3a6a7;
+}
+.menu header span a:hover{
+    color: darkgoldenrod; 
+    transition: 0.6s;
+}
+ header ul{
+    list-style: none;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    left: 0;
+    top: 6px;
+}
+ header ul li{
+     display: inline-block;
+    margin-right: 40px;
+}
+  header ul li a{
+    color: #a3a6a7;
+    letter-spacing: 2px;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: Addiction; 
+    font-size: 16px;
+    line-height: 30px; 
+    text-decoration: none;
+}
+  header ul li a:hover{
+     color: darkgoldenrod; 
+     text-shadow: 0px 0px 5px;
+     border-bottom: 2px solid ;
+ }
+ /* le courte phrase qui je décrit */ 
+header p{ 
+    margin-top: 10px;
+    float:right;
+    font-family: 'Please write me a song';
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+  header hr{ 
+    margin: 0px;
+    width: 100%;
+    background-color: #fbffdf;
+    position: inherit;
+    top: -12px;
+    height: 3px;
+    border: none;
+    box-shadow: 0px 0px 10px white;
+ }
+
+ /*** La partie nav ***/
+nav{
+    background-color: #9c9a9bcc;
+    width: 100%;
+    height: 1080px;
+    box-shadow: 0px 0px 20px #000000;
+    position: relative;
+    float: left;
+    z-index: 2;
+    overflow: overlay;
+}
+nav aside{
+    width: 100%;
+    height: 40%;
+}
+/* mon photo */
+nav aside img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 102px;
+    margin-top: 146px;
+}
+
+nav aside h2{
+    display: inline-block;
+    color: #3b3b3b;
+    margin-left: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+nav aside hr{
+    width: 144px;
+    height: 2px;
+    display: inline-block;
+    margin: 0;
+    background-color: #1b1b1bcc;
+    margin-left: -2px;
+    border: 0px;
+    box-shadow: 1px 1px 10px black;
+}
+nav aside ul {
+    list-style: none ;
+}
+/* les icons */
+nav svg{
+    width: 28px; 
+    margin: 0px;
+    float: left;
+    height: 25px;
+    color: #267cb5;
+}
+nav svg:hover{
+    width: 28.3px;
+    height: 28.3px;
+    color: #008000;
+    transition: ease-out 0.3s ease-in-out; 
+}
+nav li{ 
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* mes informations */
+nav aside ul li h3{  
+    width: 217px;
+    margin: auto;
+    position: relative;
+    left: 1px;
+    top: 2px;
+    font-family: 'Please write me a song';
+    letter-spacing: 4px;
+}
+
+/*** La partie section ***/
+.page_pr{
+    background-image: url("image/im-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 793px;
+    float: right;
+}
+.page_pr iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/** La partie footer ***/
+footer{
+    background-color: #dcd7d7;
+    width: 100%;
+    height: 250px;
+    float: right;    
+    overflow-y: overlay;
+}
+footer aside {
+    width: 44%;
+    height: 98%;
+    margin-left: 60px;
+    overflow: hidden;
+    display: inline-block;
+}
+footer aside ul{
+    list-style: none;
+}
+footer aside h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    display: inline-block;
+    color: #3b3b3b;
+} 
+footer aside hr{
+    width: 365px;
+    height: 2px;
+    display: inline-block;
+    margin: 0;
+    background-color: #1b1b1bcc;
+    margin-left: 14px;
+    border: 0px;
+    box-shadow: 1px 1px 10px black;
+} 
+/* les langues qui j'ai metse */
+footer aside ul li div{
+    background-color: #267cb5;
+    border-radius: 8px 15px 15px 8px;
+    letter-spacing: 7px;
+    margin-bottom: 30px;
+    color: #d3d3d3f0;
+    font-family: 'Addiction';
+    height: 20px;
+    padding-left: 15px;
+    transition: all 1s ease-in-out;
+}
+footer aside ul li div span{
+    font-family: 'Please write me a song';
+    float: right;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+/* le pourcentage*/
+footer aside ul li .ar{ 
+    width: 80%; 
+}
+footer aside ul li .fr{ 
+    width: 50%; 
+}
+footer aside ul li .en{ 
+    width: 40%; 
+}
+footer .dmn hr{
+    width: 133px;
+}
+/*les domaines qui m'intéressent*/
+footer .dmn ul li {
+    font-family: 'Alphacrisp';
+    font-size: 20px;
+    margin-bottom: 16px;
+    
+}
+ 
+/* le peite icon avant chaque domaine */
+.dmn li::before{   transition: all 1.5s ease-in-out;
+    content: " ";
+    background-color: #dcd7d7;
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid #267cb5;
+    border-right: 10px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-top: 10px solid transparent;
+    border-width: 10px;
+    float: left;
+    
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*** la paeti de toirs sous page .html experince competence formation ***/
+
+/* le hedere prancipal des sous page*/
+header{ 
+    width: 100%;
+}
+ header .cont {
+    height: 40px;
+} 
+/*le header*/
+header h1 {
+    text-align: center;
+    margin: 0px;
+    font-family: 'orbit';
+    color: #f4ff35;
+}
+
+/*** le section principale elle a les listes ***/
+
+section{
+    overflow: hidden;                /*pour les element  qui dan le section non sorten pas*/
+    background-repeat: no-repeat;   /*pour ne répite pas la photo*/
+    background-position: center;     /* pour etre l'arriere-plan au milieu */
+    background-size:cover;           /*pour remplir la page d'arriere-plan*/
+}
+/* font d'écran de page experience*/
+.e_xp{
+    background-image: url("image/image-12.jpg"); 
+}
+/*font d'écran de page cometence*/
+.c_pt{
+    background-image: url("image/image-9.jpg");
+}
+/* font d'écran de page formation*/
+.f_tn{
+    background-image: url("image/image-11.jpg");
+}
+section .cnt{
+    width: 75%;
+    background-color: #e7e7e7b0;
+    margin: auto;
+    border-radius: 55px 0px;
+    height: 745px;
+}
+  section .cont{
+    line-height: inherit;
+    height: 750px;
+}
+   section h2  {
+    color: rgb(11 0 51); 
+    margin-left: 50px;
+    font-family: orbit; 
+    font-size: 19px;
+    padding-top: 15px;
+}
+  section hr{
+    width: 81%;
+    margin-left: 25px;
+    height: 3px;
+    background-color: #2b2b2b;
+    border: 0px;
+    border-radius: 77px;
+    box-shadow: 0px 0px 19px black;
+}
+  section h3{
+    width: 155px;
+    background-color: #1378b99c;
+    margin-left: 60px;
+    text-align: center;
+    font-family:junction;
+    border-radius: 5px;
+    color: #140031;
+} 
+/* la liste dans la section prancipla */
+  section ul , .f_tn p{
+    width: 570px;
+    margin: auto;
+    margin-bottom: 80px;
+    list-style: none;
+    border-radius: 5px 50px;
+    transition: all 1.5s ease-in-out; 
+    font-weight: 800;
+    box-shadow: 1px 1px 20px #646464;
+ }
+ /*pour l'animation des listes */ 
+  section ul:hover,section p:hover{
+    background-color: #1378b99c;
+    transition: all 0.5s ease-in-out;
+    box-shadow:0px 0px 0px #231c35;
+ }
+  section ul li{
+      margin-top: 18px;  
+}
+/*mes formatins qui dans la page informatiosSn */
+.f_tn p {
+    width: 602px;
+    padding: 10px;
+    margin-bottom: 41px;
+    border-radius: 10px 10px;
+}
+ 
